@@ -1,0 +1,15 @@
+name = "legder_file_device"
+description = "legder block device over a desktop file (POSIX, fsync-backed)"
+version = "0.1.0-dev"
+authors = ["Olivier Henley"]
+maintainers = ["Olivier Henley <henley@adacore.com>"]
+maintainers-logins = ["ohenley"]
+licenses = "Apache-2.0"
+
+project-files = ["legder_file_device.gpr"]
+
+[[depends-on]]
+legder = "*"
+
+[[pins]]
+legder = { path = "../.." }

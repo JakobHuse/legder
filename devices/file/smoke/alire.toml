@@ -1,0 +1,18 @@
+name = "legder_file_smoke"
+description = "legder on a file: write, reopen in a new process, read back"
+version = "0.1.0-dev"
+authors = ["Olivier Henley"]
+maintainers = ["Olivier Henley <henley@adacore.com>"]
+maintainers-logins = ["ohenley"]
+licenses = "Apache-2.0"
+
+executables = ["file_smoke", "file_device_tests"]
+project-files = ["legder_file_smoke.gpr"]
+
+[[depends-on]]
+legder = "*"
+legder_file_device = "*"
+
+[[pins]]
+legder = { path = "../../.." }
+legder_file_device = { path = ".." }
